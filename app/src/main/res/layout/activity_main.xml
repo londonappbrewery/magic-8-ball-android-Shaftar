@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
+    android:background="#26ade0"
     tools:context=".MainActivity">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,35 +22,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/make_decision_textView"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_centerInParent="true"
         android:layout_marginTop="75dp">
 
         <ImageView
-            android:id="@+id/ballImage"
+            android:id="@+id/image_eightBall"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ball2" />
+            app:srcCompat="@drawable/ball1" />
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
         android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal">
 
         <Button
-            android:id="@+id/ask_button"
+            android:id="@+id/askButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:text="@string/ask_button"
-            android:textColor="@android:color/background_light"
+            android:textColor="#3F51B5"
             android:textSize="20sp" />
     </RelativeLayout>
-</LinearLayout>
+
+</RelativeLayout>
